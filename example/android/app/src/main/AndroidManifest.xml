@@ -13,7 +13,7 @@
          additional functionality it is fine to subclass or reimplement
          FlutterApplication and put your custom class here. -->
     <application
-            android:name="io.flutter.app.FlutterApplication"
+            android:name="${applicationName}"
             android:label="QR-Scan"
             android:icon="@mipmap/ic_launcher">
         <activity
@@ -22,6 +22,7 @@
                 android:theme="@style/Theme.AppCompat.NoActionBar"
                 android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
                 android:hardwareAccelerated="true"
+                android:exported="true"
                 android:windowSoftInputMode="adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
